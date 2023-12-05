@@ -6,6 +6,6 @@ namespace EldenRingWiki.Services
 {
     public class DBAPIService
     {
-        protected override string BASE_ADDR => "http://localhost:8000";
+        protected string BASE_ADDR => "http://localhost:8000";
     }
 }

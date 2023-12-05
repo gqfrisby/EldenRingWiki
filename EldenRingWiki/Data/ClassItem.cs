@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EldenRingWiki.Data    
 {
-    internal class ClassItem : IClassModel
+    public class ClassItem 
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
         public string Description { get; set; }

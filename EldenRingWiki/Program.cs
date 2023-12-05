@@ -1,4 +1,5 @@
 using EldenRingWiki.Data;
+using EldenRingWiki.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -13,6 +14,8 @@ namespace EldenRingWiki
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
+            builder.Services.AddTransient<IAmmoAPIService, AmmoAPIService>();
+            builder.Services.AddTransient<DBAPIService>();
 
             var app = builder.Build();
 

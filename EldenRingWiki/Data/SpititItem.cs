@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EldenRingWiki.Data
 {
-    internal class SpititItem : IClassModel
+    public class SpititItem 
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
         public string Description { get; set; }

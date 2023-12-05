@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace EldenRingWiki.Data
 {
-    internal class AmmoItem : IClassModel
+    public class AmmoItem
     {
-        public string Id { get; set; }
-        public string Name { get; set; }
-        public string Image { get; set; }
-        public string Description { get; set; }
-        public string Type { get; set; }
-        public string Passive { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public string image { get; set; }
+        public string description { get; set; }
+        public string type { get; set; }
+        public string passive { get; set; }
 
         //public Dictionary<string, int> AttackPowers { get; set; }
     }
